@@ -1,0 +1,238 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    
+    background: #780206;
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    background: linear-gradient(to right, #061161, #780206);
+
+    /* background-image: url(image/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; */
+}
+   
+#main {
+    
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+
+    /*ParticleJS için bu css komutları eklendi*/
+    position: absolute;
+    width: 100%;
+}
+
+
+#header {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#header h1 {
+    font-size: 4rem;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    text-shadow: 3px 5px rgba(0, 0, 0, 0.7);
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {color:rgb(255, 0, 0);}
+    25%  {color:rgb(255, 255, 0);}
+    50%  {color:rgb(0, 0, 255);}
+    75%  {color:rgb(0, 128, 0);}
+    100% {color:red}
+}
+
+.focus-in-contract-bck {
+	-webkit-animation: focus-in-contract-bck 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) ;
+	        animation: focus-in-contract-bck 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) ;
+}
+
+ @-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+#content {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#allButton .btn {
+    margin-top: 5rem;
+    margin-right: 10rem;
+    font-size: 3rem;
+    transition: ease 0.5s;
+}
+
+#allButton .btn:hover {
+    font-size: 4rem;
+    text-shadow: 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.fa-plus{
+    color: red;
+}
+
+.fa-minus {
+    color: yellow;
+}
+
+.fa-times {
+    color: blue;
+}
+
+.fa-divide {
+    color: green;
+}
+
+#operations {
+    display: none;
+    font-size: 3rem;
+    margin-top: 5rem;
+    font-family: 'Caesar Dressing', cursive;
+    color: #fff;
+}
+
+.operationsItem {
+    margin-right: 5rem;
+    padding: 1rem;
+}
+
+.operationsItem input {
+    border: none;
+    border-bottom: solid 1px #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+#info {
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 5rem;
+    text-align: end;
+    display: inline-block;
+}
+
+#info div {
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+.fa-star{
+    color: yellow;
+    font-weight: bold !important;
+}
+
+.fa-smile {
+    font-weight: bold !important;
+    color: #59B259;
+}
+
+.fa-frown {
+    font-weight: bold !important;
+    color: #DE3F44;
+}
+
+#selectLevel {
+    padding: 1rem;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#selectLevel option {
+    background: black;
+    color: #fff;
+}
+
+#controlButton button {
+    margin-top: 10rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#controlBtn {
+    background-color: #4E0828 !important;
+    transition: 1s !important;
+}
+
+#controlBtn:hover {
+    background-color: #fff !important;
+    color: #4E0828 !important;
+}
+
+.alert {
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    font-size: 1.6rem;
+}
+
+
+footer {
+    border-top: solid 1px rgba(0, 0, 0, 0.6);
+    position:fixed;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+#particles-js {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
